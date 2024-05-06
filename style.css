@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins , sans-serif';
+  /* box-sizing: border-box; */
+  scroll-behavior: smooth;
+  text-decoration: none;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:white;
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #086788;
+  width: 50px;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  background-color: #086788;
+  align-items: center;
+}
+.company-name {
+  /* position: absolute;
+  left: 20px; */
+  color: orange;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px 0;
+}
+
+
+#menu-icon{
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#menu-icon:hover{
+transform: rotate(360deg);
+}
+
+h3 {
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-size: 35px;
+}
+
+.findUs {
+  position: absolute;
+    right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.findUs i {
+  font-size: 15px;
+}
+
+.upperSection p {
+  font-size: 15px !important;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.fa-location-dot {
+  color: orange;
+}
+
+.upperSection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+input {
+  background-color: transparent;
+  border: none;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  width: 45%;
+  justify-content: space-evenly;
+  height: 30px;
+  background-color: white;
+}
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.findUs p {
+  font-size: 20px;
+}
+span {
+  color: orange;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 2px 0;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.hero {
+  height: 100%;
+  background: url(./images/hero.gif);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.hero-text {
+  margin-top: 10px;
+}
+
+h1,
+p {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+p {
+  font-size: 35px;
+}
+h1 {
+  font-size: 60px;
+}
+
+.menubar {
+  margin-top: 5px;
+  display: inline-flex;
+  /* font-size: 15px; */
+  /* border-radius: 50px; */
+  width: 60%;
+  /* border: 1px solid gray; */
+  border-radius: 100px;
+  padding: 0px 8px 0px 8px;
+  background-color: white;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+select {
+  min-width: -webkit-fill-available;
+  border: none;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.menu-item {
+  min-width: 23%;
+  padding: 20px 10px 20px 10px;
+  border-right: 1px solid gray;
+}
+.btnMenuItem {
+  background: orange;
+  /* border-right: 1px solid orange; */
+  border-radius: 0px 31px 29px 0px;
+  min-width: 23%;
+  padding: 20px 10px 20px 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.center-text {
+  text-align: center;
+  gap: 0.5rem;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.center-text h2 {
+  font-size: 35px;
+}
+
+.center-text p {
+  color: black;
+  font-size: 20px;
+}
+
+.packages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 3rem;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-bottom: 45px;
+}
+
+.row {
+  border: 2px solid rgb(239, 239, 239);
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: gray;
+  width: 90%;
+}
+
+.row img {
+  width: 100%;
+  height: 80%;
+  margin-bottom: 10px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15px 0px 15px;
+}
+.details p {
+  color: black;
+  font-size: 20px;
+}
+
+.heroTwo {
+  background: rgba(0, 0, 0, 1) url(./images/bali-sunset.jpg) no-repeat;
+  background-size: cover;
+  height: 65vh;
+  width: 100%;
+  margin-top: 4%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroTwo .center-text {
+  margin-top: 50px;
+}
+
+.column {
+  gap: 0.5rem;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.column h4 {
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+.column p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.column h4,
+p {
+  text-align: center;
+  color: white;
+}
+
+.icon {
+  height: 65px;
+  width: 65px;
+  color: orange;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+.whyUs {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.hero-container {
+  height: 80vh;
+}
+
+.feedback {
+  color: gray;
+}
+
+.clientName {
+  color: orange;
+}
+
+.fa-quote-left {
+  color: gray;
+  font-size: 5rem;
+}
+
+.testimonials {
+  margin-top: 2%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  height: 50%;
+  padding-top: 40px;
+  background-color: #086788;
+}
+footer p {
+  font-size: 20px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.social i {
+  height: 50px;
+  width: 50px;
+  color: #086788;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-bottom: 5px;
+  margin: 20px 2px 0px 2px;
+}
+
+
